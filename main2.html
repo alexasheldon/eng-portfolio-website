@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<!-- Using template from: https://www.w3schools.com/howto/howto_website_create_portfolio.asp -->
+<html>
+<title>Alexa Sheldon | Portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="new_styles.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+  body,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Raleway", sans-serif
+  }
+</style>
+
+<body class="w3-light-grey w3-content" style="max-width:1600px">
+
+  <!-- Sidebar/menu -->
+  <nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
+    <div class="w3-container">
+      <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey"
+        title="close menu">
+        <i class="fa fa-remove"></i>
+      </a>
+      <img src="assets/profile_photo1.jpg" style="width:100%;" class="w3-round"><br><br>
+      <h4><b>Alexa Sheldon</b></h4>
+      <p class="w3-text-grey">Learning, Listening, Developing</p>
+      <a href="https://github.com/alexasheldon" target="_blank"><i class="fa fa-github w3-hover-opacity"></i></a>
+      <a href="https://www.linkedin.com/in/alexa-sheldon33/" target="_blank"><i
+          class="fa fa-linkedin w3-hover-opacity"></i></a>
+    </div>
+    <div class="w3-bar-block">
+      <!-- <a href="#portfolio" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-teal"><i
+          class="fa fa-th-large fa-fw w3-margin-right"></i>PORTFOLIO</a> -->
+      <a href="#Projects" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i
+          class="fa fa-th-large fa-fw w3-margin-right"></i>PROJECTS</a>
+      <a href="#Currently" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i
+          class="fa fa-th-large fa-fw w3-margin-right"></i>CURRENTLY</a>
+      <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i
+          class="fa fa-user fa-fw w3-margin-right"></i>ABOUT</a>
+      <!-- <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i
+          class="fa fa-envelope fa-fw w3-margin-right"></i>CONTACT</a> -->
+
+    </div>
+  </nav>
+
+  <!-- Overlay effect when opening sidebar on small screens -->
+  <div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer"
+    title="close side menu" id="myOverlay"></div>
+
+  <!-- !PAGE CONTENT! -->
+  <div class="w3-main" style="margin-left:300px">
+
+    <!-- Header -->
+    <header id="portfolio">
+      <div class="w3-container" id="Projects">
+        <div class="projects-header">
+          <h3><b>My Projects</b></h3>
+          <button id="theme-toggle">Toggle Dark Mode</button>
+        </div>
+        <div class="w3-section w3-bottombar"></div>
+      </div>
+    </header>
+
+
+    <!-- First Photo Grid-->
+    <div class="w3-row-padding">
+      <div class="w3-third w3-container w3-margin-bottom">
+        <div class="w3-container w3-white">
+          <h3><b>Porridge - Cigna</b></h3>
+          <img src="MMC_1/SIP.JPG" alt="SIP Team 6" style="width:100%">
+          <div style="display: flex; align-items: center; gap: 16px;">
+            <p>Created a full end-to-end web app which analyzed code diffs from enterprise GitHub to gather insights on
+              Pull Requests including how much to test and what the major changes were. (Won the Summer Innovations
+              Project competition)</p>
+            <img src="assets/IMG_6759.jpg" alt="SIP Team 6" style="width:50%">
+          </div>
+        </div>
+      </div>
+      <div class="w3-third w3-container">
+        <div class="w3-container w3-white">
+          <h4><b>Red Panda Phylogeny Analysis</b></h4>
+          <p>Conducted a phylogenetic analysis of red pandas using mitochondrial DNA sequences to determine their
+            evolutionary relationships within the Carnivora order. Utilized bioinformatics tools for sequence alignment,
+            model selection, and tree construction, providing insights into the species' evolutionary history.</p>
+        </div>
+        <div class="w3-container w3-white">
+          <a href="https://github.com/alexasheldon/cs4775_final_project_phylogeny_red_pandas">Public GitHub Repo
+            Link</a>
+        </div>
+        <a href="assets/CS4775_Final_Report_2024.pdf" target="_blank">
+          <img src="assets/red_pandas_paper_first_page.png" alt="First page of my paper on red pandas"
+            style="width:100%" class="w3-hover-opacity">
+        </a>
+      </div>
+      <div class="w3-third w3-container w3-margin-bottom">
+        <div class="w3-container w3-white">
+          <h4><b>Single Case Litigation Budget Tracking Dashboard - Fortress</b></h4>
+          <img src="assets/single-case-litigation.png" alt="SIP Team 6" style="width:100%">
+          <p>Created a live PowerBI dashboard to assist with asset management & budget tracking. The live data which
+            is
+            confidential has been replaced with synthetic data.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- CURRENTLY -->
+    <div class="w3-row-padding" id="Currently">
+      <h3><b>Currently:</b></h3>
+    </div>
+    <div class="w3-row-padding">
+      <div class="w3-third w3-container w3-margin-bottom">
+        <div class="w3-container w3-white">
+          <h4><b>SignNet - ASL Alphabet Recognizer</b></h4>
+          <img src="assets/o-asl.png" alt="The letter O in Sign Language" style="width:20%">
+          <p>Implementing and training a CNN for recognizing American Sign Language letters in real time.</p>
+        </div>
+      </div>
+      <div class="w3-third w3-container w3-margin-bottom">
+        <div class="w3-container w3-white">
+          <h3><b>Blackjack RL Agent</b></h3>
+          <p>Implementing a reinforcement learning agent optimized for playing blackjack.</p>
+        </div>
+      </div>
+      <div class="w3-third w3-container">
+        <div class="w3-container w3-white">
+          <h4><b>Portfolio Website</b></h4>
+          <p>This involves the creation and updating of this website!</p>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Pagination -->
+    <!-- <div class="w3-center w3-padding-32">
+      <div class="w3-bar">
+        <a href="#" class="w3-bar-item w3-button w3-hover-black">«</a>
+        <a href="#" class="w3-bar-item w3-black w3-button">1</a>
+        <a href="#" class="w3-bar-item w3-button w3-hover-black">2</a>
+        <a href="#" class="w3-bar-item w3-button w3-hover-black">3</a>
+        <a href="#" class="w3-bar-item w3-button w3-hover-black">4</a>
+        <a href="#" class="w3-bar-item w3-button w3-hover-black">»</a>
+      </div>
+    </div> -->
+
+    <!-- Images of Me -->
+    <div class="w3-row-padding">
+      <div class="w3-section w3-bottombar">
+        <span class="w3-margin-right">
+        </span>
+      </div>
+      <div id="about">
+        <h4><b>About Me</b></h4>
+      </div>
+      <div class="w3-col m4">
+        <img src="MMC_1/eilean_donan.JPG" alt="Me at Eilean Donan Castle in Scotland in 2025"
+          title="Me at Eilean Donan Castle in Scotland in 2025" style="width:100%" class="w3-hover-opacity">
+        <h1><b>Hello, World!</b></h1>
+      </div>
+      <div class="w3-col m4">
+        <img src="MMC_1/kayak.JPG" alt="Me Kayaking near Monterrey, California in 2022"
+          title="Me Kayaking near Monterrey, California in 2022" style="width:100%" class="w3-hover-opacity">
+        <img src="MMC_1/santa_oliva.JPG" alt="Me in Santa Olvia, Catalonia, Spain in 2023"
+          title="Me in Santa Olvia, Catalonia, Spain in 2023" style="width:100%" class="w3-hover-opacity">
+      </div>
+      <div class="w3-col m4">
+        <img src="MMC_1/paris.JPG" alt="Me in Paris, France in 2025" title="Me in Paris, France in 2025"
+          style="width:100%" class="w3-hover-opacity">
+      </div>
+    </div>
+
+    <div class="w3-container " style="margin-bottom:32px">
+      <p>I'm currently in my final year (graduating May 2026) at Cornell University
+        studying Computer Science with a passion for software development, machine learning and artificial
+        intelligence.
+        Beyond my projects and studies, I love to travel and explore new places (pictured above).
+        It fuels my curiosity and inspires me to approach challenges with diverse perspectives.
+        My goal is to contribute to impactful projects that bridge cutting-edge technology with
+        real-world needs.
+      </p>
+      <hr>
+
+      <!-- <h4>Technical Skills</h4> -->
+      <!-- Progress bars / Skills -->
+      <p>Photography</p>
+      <div class="w3-grey">
+        <div class="w3-container w3-dark-grey w3-padding w3-center" style="width:95%">95%</div>
+      </div>
+      <p>Web Design</p>
+      <div class="w3-grey">
+        <div class="w3-container w3-dark-grey w3-padding w3-center" style="width:85%">85%</div>
+      </div>
+      <p>Photoshop</p>
+      <div class="w3-grey">
+        <div class="w3-container w3-dark-grey w3-padding w3-center" style="width:80%">80%</div>
+      </div>
+      <p>
+        <a href="assets/Alexa_Sheldon_Resume_2026.docx" target="_blank">
+          <button class="w3-button w3-dark-grey w3-padding-large w3-margin-top w3-margin-bottom">
+            <i class="fa fa-download w3-margin-right"></i>Download Resume
+          </button>
+        </a>
+      </p>
+      <hr>
+
+      <!-- <h4>How much I charge</h4> -->
+      <!-- Pricing Tables -->
+      <!-- <div class="w3-row-padding" style="margin:0 -16px">
+        <div class="w3-third w3-margin-bottom">
+          <ul class="w3-ul w3-border w3-white w3-center w3-opacity w3-hover-opacity-off">
+            <li class="w3-black w3-xlarge w3-padding-32">Basic</li>
+            <li class="w3-padding-16">Web Design</li>
+            <li class="w3-padding-16">Photography</li>
+            <li class="w3-padding-16">1GB Storage</li>
+            <li class="w3-padding-16">Mail Support</li>
+            <li class="w3-padding-16">
+              <h2>$ 10</h2>
+              <span class="w3-opacity">per month</span>
+            </li>
+            <li class="w3-light-grey w3-padding-24">
+              <button class="w3-button w3-teal w3-padding-large w3-hover-black">Sign Up</button>
+            </li>
+          </ul>
+        </div>
+
+        <div class="w3-third w3-margin-bottom">
+          <ul class="w3-ul w3-border w3-white w3-center w3-opacity w3-hover-opacity-off">
+            <li class="w3-teal w3-xlarge w3-padding-32">Pro</li>
+            <li class="w3-padding-16">Web Design</li>
+            <li class="w3-padding-16">Photography</li>
+            <li class="w3-padding-16">50GB Storage</li>
+            <li class="w3-padding-16">Endless Support</li>
+            <li class="w3-padding-16">
+              <h2>$ 25</h2>
+              <span class="w3-opacity">per month</span>
+            </li>
+            <li class="w3-light-grey w3-padding-24">
+              <button class="w3-button w3-teal w3-padding-large w3-hover-black">Sign Up</button>
+            </li>
+          </ul>
+        </div> -->
+      <!-- 
+        <div class="w3-third">
+          <ul class="w3-ul w3-border w3-white w3-center w3-opacity w3-hover-opacity-off">
+            <li class="w3-black w3-xlarge w3-padding-32">Premium</li>
+            <li class="w3-padding-16">Web Design</li>
+            <li class="w3-padding-16">Photography</li>
+            <li class="w3-padding-16">Unlimited Storage</li>
+            <li class="w3-padding-16">Endless Support</li>
+            <li class="w3-padding-16">
+              <h2>$ 25</h2>
+              <span class="w3-opacity">per month</span>
+            </li>
+            <li class="w3-light-grey w3-padding-24">
+              <button class="w3-button w3-teal w3-padding-large w3-hover-black">Sign Up</button>
+            </li>
+          </ul>
+        </div> -->
+
+      <!-- Contact Section -->
+      <!-- <div class="w3-container w3-padding-large w3-grey">
+      <h4 id="contact"><b>Contact Me</b></h4>
+      <div class="w3-row-padding w3-center w3-padding-24" style="margin:0 -16px">
+        <div class="w3-third w3-dark-grey">
+          <p><i class="fa fa-envelope w3-xxlarge w3-text-light-grey"></i></p>
+          <p>email@email.com</p>
+        </div>
+        <div class="w3-third w3-teal">
+          <p><i class="fa fa-map-marker w3-xxlarge w3-text-light-grey"></i></p>
+          <p>Chicago, US</p>
+        </div>
+        <div class="w3-third w3-dark-grey">
+          <p><i class="fa fa-phone w3-xxlarge w3-text-light-grey"></i></p>
+          <p>512312311</p>
+        </div>
+      </div>
+      <hr class="w3-opacity">
+      <form action="/action_page.php" target="_blank">
+        <div class="w3-section">
+          <label>Name</label>
+          <input class="w3-input w3-border" type="text" name="Name" required>
+        </div>
+        <div class="w3-section">
+          <label>Email</label>
+          <input class="w3-input w3-border" type="text" name="Email" required>
+        </div>
+        <div class="w3-section">
+          <label>Message</label>
+          <input class="w3-input w3-border" type="text" name="Message" required>
+        </div>
+        <button type="submit" class="w3-button w3-black w3-margin-bottom"><i
+            class="fa fa-paper-plane w3-margin-right"></i>Send Message</button>
+      </form>
+    </div> -->
+
+      <!-- Footer -->
+      <footer class="w3-container w3-padding-32 w3-dark-grey">
+        <div class="w3-row-padding">
+          <div class="w3-third">
+            <h3>FOOTER</h3>
+            <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies
+              congue
+              gravida diam non fringilla.</p>
+          </div>
+
+          <div class="w3-third">
+            <h3>BLOG POSTS</h3>
+            <ul class="w3-ul w3-hoverable">
+              <li class="w3-padding-16">
+                <img src="/w3images/workshop.jpg" class="w3-left w3-margin-right" style="width:50px">
+                <span class="w3-large">Lorem</span><br>
+                <span>Sed mattis nunc</span>
+              </li>
+              <li class="w3-padding-16">
+                <img src="/w3images/gondol.jpg" class="w3-left w3-margin-right" style="width:50px">
+                <span class="w3-large">Ipsum</span><br>
+                <span>Praes tinci sed</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="w3-third">
+            <h3>POPULAR TAGS</h3>
+            <p>
+              <span class="w3-tag w3-black w3-margin-bottom">Travel</span> <span
+                class="w3-tag w3-grey w3-small w3-margin-bottom">New York</span> <span
+                class="w3-tag w3-grey w3-small w3-margin-bottom">London</span>
+              <span class="w3-tag w3-grey w3-small w3-margin-bottom">IKEA</span> <span
+                class="w3-tag w3-grey w3-small w3-margin-bottom">NORWAY</span> <span
+                class="w3-tag w3-grey w3-small w3-margin-bottom">DIY</span>
+              <span class="w3-tag w3-grey w3-small w3-margin-bottom">Ideas</span> <span
+                class="w3-tag w3-grey w3-small w3-margin-bottom">Baby</span> <span
+                class="w3-tag w3-grey w3-small w3-margin-bottom">Family</span>
+              <span class="w3-tag w3-grey w3-small w3-margin-bottom">News</span> <span
+                class="w3-tag w3-grey w3-small w3-margin-bottom">Clothing</span> <span
+                class="w3-tag w3-grey w3-small w3-margin-bottom">Shopping</span>
+              <span class="w3-tag w3-grey w3-small w3-margin-bottom">Sports</span> <span
+                class="w3-tag w3-grey w3-small w3-margin-bottom">Games</span>
+            </p>
+          </div>
+
+        </div>
+      </footer>
+
+      <!-- <div class="w3-black w3-center w3-padding-24">Powered by <a href="https://www.w3schools.com/w3css/default.asp"
+        title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></div> -->
+
+      <!-- End page content -->
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
