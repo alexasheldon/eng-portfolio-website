@@ -21,7 +21,9 @@ const Projects: React.FC<ProjectsProps> = () => {
         <div className="w3-third w3-container w3-margin-bottom">
           <div className="w3-container w3-white">
             <h4><b>Porridge - Cigna</b></h4>
-            <img src={imgSIP} alt="SIP Team 6" style={{ width: "100%" }} />
+            <a href={imgSIP} target="_blank">
+              <img src={imgSIP} alt="SIP Team 6" style={{ width: "100%" }} className="w3-hover-opacity" />
+            </a>
             <p>
               <img src={imgPorridge} alt="SIP Team 6" style={{ float: "right", width: "50%", margin: "0 0 1em 1em" }} />
               Created a full end-to-end web app which analyzed code diffs from enterprise GitHub to gather insights on
@@ -74,7 +76,7 @@ const Projects: React.FC<ProjectsProps> = () => {
         </div>
         <div className="w3-third w3-container w3-margin-bottom">
           <div className="w3-container w3-white">
-            <h3><b>Blackjack RL Agent</b></h3>
+            <h4><b>Blackjack RL Agent</b></h4>
             <p>Implementing a reinforcement learning agent optimized for playing blackjack.</p>
           </div>
         </div>
