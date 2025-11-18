@@ -26,7 +26,9 @@ function Landing() {
     };
   }, [vantaEffect]);
 
-  return <div ref={vantaRef} style={{ height: '100vh', width: '100vw' }} id="landing"></div>;
+  return (
+    <div ref={vantaRef} style={{ height: '100vh', width: '100vw' }} id="landing">
+    </div>);
 }
 
 //   return (
