@@ -31,7 +31,13 @@ const Projects: React.FC<ProjectsProps> = () => {
               Pull Requests including how much to test and what the major changes were. (Won the Summer Innovations
               Project competition)
             </p>
-
+            <div className="w3-tag w3-light-grey w3-small">Node.js w/ bun</div>
+            <div className="w3-tag w3-light-grey w3-small">Typescript</div>
+            <div className="w3-tag w3-light-grey w3-small">RESTful APIs</div>
+            <div className="w3-tag w3-light-grey w3-small">Git/Github</div>
+            <div className="w3-tag w3-light-grey w3-small">Artificial Intelligence</div>
+            <div className="w3-tag w3-light-grey w3-small">AWS</div>
+            <div className="w3-tag w3-light-grey w3-small">PostgreSQL</div>
           </div>
         </div>
         <div className="w3-third w3-container">
@@ -44,11 +50,17 @@ const Projects: React.FC<ProjectsProps> = () => {
               implemented various phylogenetic tree algorithms, leveraging beta-hill climbing. Our paper
               provides
               evolutionary insights into the monotypic taxon of the Red Panda.</p>
+            <a href={pandasReportPdf} target="_blank">
+              <img src={pandasReportImg} alt="First page of my paper on red pandas"
+                style={{ width: "100%" }} className="w3-hover-opacity" />
+            </a>
+            <div className="w3-tag w3-light-grey w3-small">Python</div>
+            <div className="w3-tag w3-light-grey w3-small">Sequence Alignment</div>
+            <div className="w3-tag w3-light-grey w3-small">Phylogenetic Trees</div>
+            <div className="w3-tag w3-light-grey w3-small">Algorithmic Implementation</div>
           </div>
-          <a href={pandasReportPdf} target="_blank">
-            <img src={pandasReportImg} alt="First page of my paper on red pandas"
-              style={{ width: "100%" }} className="w3-hover-opacity" />
-          </a>
+
+
         </div>
         <div className="w3-third w3-container w3-margin-bottom">
           <div className="w3-container w3-white">
@@ -60,6 +72,11 @@ const Projects: React.FC<ProjectsProps> = () => {
             <p>Created a live PowerBI dashboard to assist with asset management & budget tracking. The live data which
               is
               confidential has been replaced with synthetic data.</p>
+            <div className="w3-tag w3-light-grey w3-small">PowerBI</div>
+            <div className="w3-tag w3-light-grey w3-small">Data Visualization</div>
+            <div className="w3-tag w3-light-grey w3-small">DAX</div>
+            <div className="w3-tag w3-light-grey w3-small">Data Analysis</div>
+            <div className="w3-tag w3-light-grey w3-small">Asset Management</div>
           </div>
         </div>
       </div>
@@ -73,18 +90,29 @@ const Projects: React.FC<ProjectsProps> = () => {
             <p><img src={aslImg} alt="The letter O in Sign Language"
               style={{ float: "right", width: "30%", margin: "0 0 1em 1em" }} />
               Implementing and training a CNN for recognizing American Sign Language letters in real time.</p>
+            <div className="w3-tag w3-light-grey w3-small">Python</div>
+            <div className="w3-tag w3-light-grey w3-small">CNNs</div>
+            <div className="w3-tag w3-light-grey w3-small">Computer Vision</div>
+            <div className="w3-tag w3-light-grey w3-small">Data Cleaning</div>
           </div>
         </div>
         <div className="w3-third w3-container w3-margin-bottom">
           <div className="w3-container w3-white">
             <h4><b>Blackjack RL Agent</b></h4>
             <p>Implementing a reinforcement learning agent optimized for playing blackjack.</p>
+            <div className="w3-tag w3-light-grey w3-small">Python</div>
+            <div className="w3-tag w3-light-grey w3-small">Reinforcement Learning</div>
+            <div className="w3-tag w3-light-grey w3-small">DQN</div>
+            <div className="w3-tag w3-light-grey w3-small">AI Communication</div>
           </div>
         </div>
         <div className="w3-third w3-container">
           <div className="w3-container w3-white">
             <a href="https://github.com/alexasheldon/eng-portfolio-website" target='_blank'><h4><b>Portfolio Website</b></h4></a>
             <p>This involves the creation and updating of this website!</p>
+            <div className="w3-tag w3-light-grey w3-small">React.js / Node.js</div>
+            <div className="w3-tag w3-light-grey w3-small">Typescript</div>
+            <div className="w3-tag w3-light-grey w3-small">HTML</div>
           </div>
         </div>
       </div>
