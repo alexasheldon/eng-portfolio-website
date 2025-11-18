@@ -47,3 +47,17 @@
   color: #fff !important;
   background-color: #616161 !important
 }
+
+.w3-badge,
+.w3-tag {
+  background-color: #000;
+  color: #fff;
+  display: inline-block;
+  padding-left: 8px;
+  padding-right: 8px;
+  text-align: center
+}
+
+.w3-badge {
+  border-radius: 50%
+}
