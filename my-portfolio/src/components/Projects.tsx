@@ -5,6 +5,7 @@ import pandasReportPdf from '../assets/CS4775_Final_Report_2024.pdf';
 import pandasReportImg from '../assets/red_pandas_paper_first_page.png';
 import dashboardImg from '../assets/single-case-litigation.png'
 import aslImg from '../assets/o-asl.png';
+import '../styles/projects.css';
 
 interface ProjectsProps { }
 
