@@ -3,6 +3,7 @@ import parisImg from '../assets/paris.jpg';
 import eileanDonanImg from '../assets/eilean_donan.jpg';
 import kayakImg from '../assets/kayak.jpg';
 import santaOlivaImg from '../assets/santa_oliva.jpg';
+import '../styles/about.css';
 
 interface AboutProps { }
 
