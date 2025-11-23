@@ -17,7 +17,7 @@ const Projects: React.FC<ProjectsProps> = () => {
           <span className="w3-margin-right"></span>
         </div>
         <div>
-          <h4><b>My Projects</b></h4>
+          <b><h3>My Projects</h3></b>
         </div>
         <div className="w3-third w3-container w3-margin-bottom">
           <div className="w3-container w3-white">
@@ -59,8 +59,6 @@ const Projects: React.FC<ProjectsProps> = () => {
             <div className="w3-tag w3-light-grey w3-small">Phylogenetic Trees</div>
             <div className="w3-tag w3-light-grey w3-small">Algorithmic Implementation</div>
           </div>
-
-
         </div>
         <div className="w3-third w3-container w3-margin-bottom">
           <div className="w3-container w3-white">

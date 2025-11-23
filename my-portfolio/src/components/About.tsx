@@ -15,7 +15,7 @@ const About: React.FC<AboutProps> = () => {
           <span className="w3-margin-right"></span>
         </div>
         <div>
-          <h4><b>About Me</b></h4>
+          <h3><b>About Me</b></h3>
         </div>
         <div className="w3-col m4">
           <div className="image-container">
@@ -53,8 +53,7 @@ const About: React.FC<AboutProps> = () => {
           </div>
         </div>
       </div>
-
-      <div className="w3-container " style={{ marginBottom: "32px" }}>
+      <div className="w3-container " style={{ marginBottom: "0px" }}>
         <p>I'm currently in my final year (graduating May 2026) at Cornell University
           studying Computer Science with a passion for software development, machine learning and artificial
           intelligence.
@@ -62,13 +61,6 @@ const About: React.FC<AboutProps> = () => {
           It fuels my curiosity and inspires me to approach challenges with diverse perspectives.
           My goal is to contribute to impactful projects that bridge cutting-edge technology with
           real-world needs.
-        </p>
-        <p>
-          <a href="/Alexa_sheldon_Resume_2026.docx" target="_blank" rel="noopener noreferrer">
-            <button className="w3-button w3-dark-grey w3-padding-large w3-margin-top w3-margin-bottom">
-              <i className="fa fa-download w3-margin-right"></i>Download Resume
-            </button>
-          </a>
         </p>
       </div>
     </section>

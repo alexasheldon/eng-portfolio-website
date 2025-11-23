@@ -35,8 +35,15 @@ const Sidebar: React.FC<SidebarProps> = ({ isOpen, onClose }) => {
             className="fa fa-user fa-fw w3-margin-right"></i>About Me</a>
           <a href="#projects" className="w3-bar-item w3-button w3-padding"><i
             className="fa fa-th-large fa-fw w3-margin-right"></i>Projects</a>
-          <a href="#experience" className="w3-bar-item w3-button w3-padding"><i
-            className="fa fa-th-large fa-fw w3-margin-right"></i>Experience</a>
+        </div>
+        <div className="w3-container" style={{ bottom: '0', position: 'absolute', width: '100%' }}>
+          <p>
+            <a href="/Alexa_sheldon_Resume_2026.docx" target="_blank" rel="noopener noreferrer">
+              <button className="w3-button w3-dark-grey w3-padding-large w3-margin-top w3-margin-bottom">
+                <i className="fa fa-download w3-margin-right"></i>Download Resume
+              </button>
+            </a>
+          </p>
         </div>
       </nav>
       {/* Overlay (only shows on small screens) */}
