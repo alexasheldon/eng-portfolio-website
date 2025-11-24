@@ -1,6 +1,8 @@
 import React from 'react';
 import * as Three from 'three';
-import BIRDS from 'vanta/dist/vanta.birds.min';
+import WAVES from 'vanta/dist/vanta.waves.min';
+import Typed from "typed.js";
+import '../styles/landing.css';
 
 function Landing() {
   const vantaRef = React.useRef(null);
@@ -8,7 +10,7 @@ function Landing() {
 
   React.useEffect(() => {
     if (!vantaEffect) {
-      setVantaEffect(BIRDS({
+      setVantaEffect(WAVES({
         el: vantaRef.current,
         THREE: Three,
         mouseControls: true,
@@ -18,18 +20,8 @@ function Landing() {
         minWidth: 200.00,
         scale: 1.00,
         scaleMobile: 1.00,
-        backgroundColor: 0x000000, // Dark greenish background
-        backgroundAlpha: 0.0,
-        color1: 0x6495ed, // Cornflower blue
-        color2: 0xc8d62b, // Bright yellow-green
-        birdSize: 1.50,
-        wingSpan: 20.00,
-        separation: 60.00,
-        alignment: 20.00,
-        cohesion: 20.00,
-        quantity: 4.00,
-        speedLimit: 4.00,
-        colorMode: "lerpGradient"
+        color: 0x2469a0
+        // #5892ecff
       }));
     }
     return () => {
@@ -37,42 +29,36 @@ function Landing() {
     };
   }, [vantaEffect]);
 
+  const el = React.useRef(null);
+
+  React.useEffect(() => {
+    const typed = new Typed(el.current, {
+      strings: ["\"Hello, World!\"", "Welcome to my portfolio!", "\"Hola, Mundo!\"", "Click the arrow below to enter!"],
+      typeSpeed: 50,
+      backSpeed: 25,
+      loop: true,
+      backDelay: 1500,
+      showCursor: true,
+      cursorChar: '|',
+    });
+    return () => {
+      typed.destroy();
+    };
+  }, []);
+
   return (
-    <div ref={vantaRef} style={{ height: '100vh', width: '100%' }} id="landing">
-      <div
-        style={{
-          position: 'absolute',
-          top: '50%',
-          left: '50%',
-          transform: 'translate(-50%, -50%)',
-          color: '#3f523a',
-          textAlign: 'center',
-          fontSize: '2rem',
-          fontWeight: 'bold',
-        }}
-      >
-        <p>Hello, World!</p>
-        <p>My name is Alexa Sheldon</p>
+    <div ref={vantaRef} id="landing">
+      <div className="landing-text">
+        <h1>Alexa Sheldon</h1>
+        <h2><span ref={el}></span></h2>
+      </div>
+      <div className="scroll-down">
+        <a href="#about">
+          <i className=" fa fa-chevron-down">
+          </i></a>
       </div>
     </div>);
 }
-
-//   return (
-//     <section
-//       id="landing"
-//       style={{
-//         height: '100vh', // full viewport height
-//         display: 'flex',
-//         alignItems: 'center',
-//         justifyContent: 'center',
-//         background: '#222',
-//         color: '#fff',
-//       }}
-//     >
-//       <h1>Welcome to My Portfolio</h1>
-//     </section>
-//   );
-// };
 
 export default Landing;
 
