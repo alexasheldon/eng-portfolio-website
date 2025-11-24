@@ -10,7 +10,6 @@ const Footer: React.FC<FooterProps> = () => {
         <div className="w3-third">
           <h3>Contact Me</h3>
           <p><i className="fa fa-envelope"></i> alexarsheldon@gmail.com</p>
-          <p><i className="fa fa-phone"></i> 508-308-5340</p>
         </div>
       </div>
     </footer>
