@@ -1,5 +1,6 @@
 import React from 'react'
 import './styles/global.css'
+import './styles/app.css'
 import Landing from './components/Landing.tsx'
 import Sidebar from './components/Sidebar.tsx'
 import About from './components/About.tsx'
@@ -21,7 +22,7 @@ function App() {
   }, []);
 
   return (
-    <><div className="w3-light-grey w3-content" style={{ maxWidth: "1600px" }}>
+    <><div className="w3-light-grey wrapper">
       <Sidebar isOpen={showSidebar} onClose={() => setShowSidebar(false)} />
       <div id="main" className={showSidebar ? "sidebar-open" : ""}>
         <Landing />

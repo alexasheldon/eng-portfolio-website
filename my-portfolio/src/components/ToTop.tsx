@@ -35,6 +35,7 @@ const ToTop: React.FC = () => {
           fontSize: '18px',
           borderRadius: '5px',
           backgroundColor: '#555',
+          opacity: 0.7,
           color: '#fff',
           border: 'none',
           cursor: 'pointer',

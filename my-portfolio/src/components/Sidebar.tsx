@@ -12,11 +12,11 @@ const Sidebar: React.FC<SidebarProps> = ({ isOpen, onClose }) => {
 
   return (
     <>
-      {isOpen && <div className="overlay" onClick={onClose}></div>}
+      {isOpen && <div onClick={onClose}></div>}
       {/* Sidebar */}
       <nav
         className={`w3-sidebar w3-collapse w3-white w3-animate-left`}
-        style={{ zIndex: 3, width: '300px' }}
+        style={{ zIndex: 3 }}
       >
         <div className="w3-container">
           <a href="#" onClick={onClose} className="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey"
@@ -46,14 +46,6 @@ const Sidebar: React.FC<SidebarProps> = ({ isOpen, onClose }) => {
           </p>
         </div>
       </nav>
-      {/* Overlay (only shows on small screens) */}
-      {/* <div
-        className="w3-overlay w3-hide-large w3-animate-opacity"
-        onClick={onClose}
-        style={{ cursor: 'pointer' }}
-        title="close side menu"
-        id="myOverlay"
-      ></div> */}
     </>
   );
 };

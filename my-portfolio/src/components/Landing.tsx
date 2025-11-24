@@ -20,7 +20,8 @@ function Landing() {
         minWidth: 200.00,
         scale: 1.00,
         scaleMobile: 1.00,
-        color: 0x2469a0
+        color: 0x2469a0,
+        resize: true,
         // #5892ecff
       }));
     }
@@ -33,7 +34,7 @@ function Landing() {
 
   React.useEffect(() => {
     const typed = new Typed(el.current, {
-      strings: ["\"Hello, World!\"", "Welcome to my portfolio!", "\"Hola, Mundo!\"", "Click the arrow below to enter!"],
+      strings: ["\"Hello, World!\"", "Scroll down to enter!", "Welcome to my portfolio!", "\"Hola, Mundo!\"", "Click the arrow below to enter!"],
       typeSpeed: 50,
       backSpeed: 25,
       loop: true,
