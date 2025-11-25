@@ -111,20 +111,3 @@ section {
   border-radius: 3px;
   font-size: .8rem;
 }
-
-.fancy-text {
-  font-weight: bold;
-  font-size: 2.5rem;
-  cursor: pointer;
-}
-
-.fancy-text span {
-  display: inline-block;
-  transition: transform 0.3s ease;
-}
-
-.fancy-text:hover span:hover {
-  transform: translateY(-5px);
-  transition: transform 0.3s cubic-bezier(.68, -0.55, .27, 1.55);
-  color: #b91919
-}
