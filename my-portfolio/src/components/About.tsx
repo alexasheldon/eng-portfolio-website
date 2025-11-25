@@ -63,64 +63,7 @@ const About: React.FC<AboutProps> = () => {
             </div>
           </SwiperSlide>
         </Swiper>
-        {/* <div className="gallery-container">
-          <div className="image-container">
-            <img src={eileanDonanImg} alt="Me at Eilean Donan Castle in Scotland in 2025"
-              title="Me at Eilean Donan Castle in Scotland in 2025" className="gallery-image" />
-            <div className="overlay-text">Eilean Donan Castle, Scotland, 2025</div>
-          </div>
-          <div className="image-container">
-            <img src={kayakImg} alt="Me Kayaking near Monterrey, California in 2022"
-              title="Me Kayaking near Monterrey, California in 2022" className="gallery-image" />
-            <div className="overlay-text">Kayaking near Monterrey, California, 2022</div>
-          </div>
-          <div className="image-container">
-            <img src={santaOlivaImg} alt="Me in Santa Olvia, Catalonia, Spain in 2023"
-              title="Me in Santa Olvia, Catalonia, Spain in 2023" className="gallery-image" />
-            <div className="overlay-text">Santa Olvia, Catalonia, Spain, 2023</div>
-          </div>
-          <div className="image-container">
-            <img src={parisImg} alt="Me in Paris, France in 2025" title="Me in Paris, France in 2025"
-              className="gallery-image" />
-            <div className="overlay-text">Paris, France, 2025</div>
-          </div>
-        </div> */}
         <h1><b>Hello, World!</b></h1>
-        {/* <div className="w3-col m4">
-          <div className="image-container">
-            <a href={eileanDonanImg} target="_blank">
-              <img src={eileanDonanImg} alt="Me at Eilean Donan Castle in Scotland in 2025"
-                title="Me at Eilean Donan Castle in Scotland in 2025" style={{ width: "100%" }} className="w3-hover-opacity" />
-            </a>
-            <div className="overlay-text">Eilean Donan Castle, Scotland, 2025</div>
-          </div>
-          <h1><b>Hello, World!</b></h1>
-        </div>
-        <div className="w3-col m4">
-          <div className="image-container">
-            <a href={kayakImg} target="_blank">
-              <img src={kayakImg} alt="Me Kayaking near Monterrey, California in 2022"
-                title="Me Kayaking near Monterrey, California in 2022" style={{ width: "100%" }} className="w3-hover-opacity" />
-            </a>
-            <div className="overlay-text">Kayaking near Monterrey, California, 2022</div>
-          </div>
-          <div className="image-container">
-            <a href={santaOlivaImg} target="_blank">
-              <img src={santaOlivaImg} alt="Me in Santa Olvia, Catalonia, Spain in 2023"
-                title="Me in Santa Olvia, Catalonia, Spain in 2023" style={{ width: "100%" }} className="w3-hover-opacity" />
-            </a>
-            <div className="overlay-text">Santa Olvia, Catalonia, Spain, 2023</div>
-          </div>
-        </div>
-        <div className="w3-col m4">
-          <div className="image-container">
-            <a href={parisImg} target="_blank">
-              <img src={parisImg} alt="Me in Paris, France in 2025" title="Me in Paris, France in 2025"
-                style={{ width: "100%" }} className="w3-hover-opacity" />
-            </a>
-            <div className="overlay-text">Paris, France, 2025</div>
-          </div>
-        </div> */}
       </div>
       <div className="w3-container " style={{ marginBottom: "0px" }}>
         <p>I'm currently in my final year (graduating May 2026) at Cornell University

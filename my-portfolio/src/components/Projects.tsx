@@ -2,7 +2,6 @@ import React from 'react';
 import imgSIP from '../assets/SIP.jpg';
 import imgPorridge from '../assets/IMG_6759.jpg';
 import pandasReportPdf from '../assets/CS4775_Final_Report_2024.pdf';
-import pandasReportImg from '../assets/red_pandas_paper_first_page.png';
 import dashboardImg from '../assets/single-case-litigation.png'
 import aslImg from '../assets/o-asl.png';
 import '../styles/projects.css';
@@ -42,18 +41,16 @@ const Projects: React.FC<ProjectsProps> = () => {
         </div>
         <div className="w3-third w3-container">
           <div className="w3-container w3-white">
-            <a href="https://github.com/alexasheldon/cs4775_final_project_phylogeny_red_pandas" target="_blank">
-              <h4><b>Red Panda Phylogeny Analysis</b></h4>
-            </a>
-            <p>Conducted a phylogenetic analysis of red pandas using mitochondrial DNA sequences (creating a possible
-              evolutionary tree). We determined sequence alignment and
-              implemented various phylogenetic tree algorithms, leveraging beta-hill climbing. Our paper
-              provides
-              evolutionary insights into the monotypic taxon of the Red Panda.</p>
-            <a href={pandasReportPdf} target="_blank">
-              <img src={pandasReportImg} alt="First page of my paper on red pandas"
-                style={{ width: "100%" }} className="w3-hover-opacity" />
-            </a>
+            <h4><b>Red Panda Phylogeny Analysis</b></h4>
+            <a href="https://github.com/alexasheldon/cs4775_final_project_phylogeny_red_pandas" target="_blank"><i className="fa fa-github fa-2x w3-hover-opacity"></i></a>
+            <p>Applying algorithms to Red Panda DNA to determine a potential split in its speciation.</p>
+            <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vTuIOKVnPhrLvKjZPqffxpJSvHfo2Sj_8T4HXUbohAXMGJH-vFb6WViFar-onamWQ02_-px7rxNvBQZ/pubembed?start=false&loop=false&delayms=3000"
+              width="100%" height="250px" allowFullScreen style={{ border: "none" }}>
+            </iframe>
+            <iframe src={pandasReportPdf} width="100%" height="300px">
+              This browser does not support PDFs. Please download the PDF to view it:
+              <a href={pandasReportPdf}>Download PDF</a>.
+            </iframe>
             <div className="w3-tag w3-light-grey w3-small">Python</div>
             <div className="w3-tag w3-light-grey w3-small">Sequence Alignment</div>
             <div className="w3-tag w3-light-grey w3-small">Phylogenetic Trees</div>
@@ -79,7 +76,7 @@ const Projects: React.FC<ProjectsProps> = () => {
         </div>
       </div>
       <div className="w3-row-padding">
-        <h3><b>Currently:</b></h3>
+        <h3><b>Projects I'm Currently Working On:</b></h3>
       </div>
       <div className="w3-row-padding">
         <div className="w3-third w3-container w3-margin-bottom">
