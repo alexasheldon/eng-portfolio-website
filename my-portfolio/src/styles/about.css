@@ -36,7 +36,7 @@ section {
 }
 
 .w3-bottombar {
-  border-bottom: 6px solid #ccc !important
+  border-bottom: 6px solid '#007aff' !important;
 }
 
 .w3-margin-right {

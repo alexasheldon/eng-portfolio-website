@@ -75,7 +75,7 @@ const About: React.FC<AboutProps> = () => {
           real-world needs.
         </p>
       </div>
-    </section>
+    </section >
   );
 };
 
