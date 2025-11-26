@@ -30,7 +30,7 @@ const projects: Project[] = [
       "Pull Requests including how much to test and what the major changes were. (Won the Summer Innovations " +
       "Project competition)",
     additionalImage: imgPorridge,
-    tags: ["Node.js w/ bun", "Typescript", "RESTful APIs", "Git/GitHub", "Artifical Intelligence", "AWS", "PostreSQL"]
+    tags: ["Node.js w/ bun", "Typescript", "RESTful APIs", "Git/GitHub", "Scrum", "Artifical Intelligence", "AWS", "PostreSQL"]
   },
   {
     title: "Red Panda Phylogeny Analysis",
