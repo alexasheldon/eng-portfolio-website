@@ -28,7 +28,7 @@ const Sidebar: React.FC<SidebarProps> = ({ isOpen, onClose }) => {
           <p className="w3-text-grey">Learning, Listening, Developing</p>
           <a href="https://github.com/alexasheldon" target="_blank"><i className="fa fa-github fa-2x w3-hover-opacity"></i></a>
           <a href="https://www.linkedin.com/in/alexa-sheldon33/" target="_blank"><i
-            className="fa fa-linkedin fa-2x w3-hover-opacity" style={{ marginLeft: '6px' }}></i></a>
+            className="fa fa-linkedin fa-2x w3-hover-opacity" style={{ marginLeft: '10px' }}></i></a>
         </div>
         <div className="w3-bar-block">
           <a href="#about" className="w3-bar-item w3-button w3-padding"><i
