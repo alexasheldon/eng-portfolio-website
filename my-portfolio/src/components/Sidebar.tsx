@@ -38,7 +38,7 @@ const Sidebar: React.FC<SidebarProps> = ({ isOpen, onClose }) => {
         </div>
         <div className="w3-container" style={{ bottom: '0', position: 'absolute', width: '100%' }}>
           <p>
-            <a href="/Alexa_sheldon_Resume_2026.docx" target="_blank" rel="noopener noreferrer">
+            <a href="/eng-portfolio-website/Alexa_Sheldon_Resume_2026.docx" target="_blank" rel="noopener noreferrer">
               <button className="w3-button w3-dark-grey w3-padding-large w3-margin-top w3-margin-bottom">
                 <i className="fa fa-download w3-margin-right"></i>Download Resume
               </button>
