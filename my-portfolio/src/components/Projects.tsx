@@ -3,7 +3,9 @@ import imgSIP from '../assets/SIP.jpg';
 import imgPorridge from '../assets/IMG_6759.jpg';
 import pandasReportPdf from '../assets/CS4775_Final_Report_2024.pdf';
 import dashboardImg from '../assets/single-case-litigation.png'
-import aslImg from '../assets/o-asl.png';
+import aslGif from '../assets/signingB.gif';
+import aslImg from '../assets/letter_A_w_overlay_copy.png';
+import blackjackQ from '../assets/blackjack-q.png'
 import redPandaFallback from "../assets/red_panda_fallback.jpg";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Thumbs, Mousewheel } from "swiper/modules";
@@ -139,22 +141,40 @@ const Projects: React.FC<ProjectsProps> = () => {
         <div className="w3-third w3-container w3-margin-bottom">
           <div className="w3-container w3-white">
             <h4><b>SignNet - ASL Alphabet Recognizer</b></h4>
-            <p><img src={aslImg} alt="The letter O in Sign Language"
-              style={{ float: "right", width: "30%", margin: "0 0 1em 1em" }} />
-              Implementing and training a CNN for recognizing American Sign Language letters in real time.</p>
+            <p><img src={aslGif} alt="Live Classification Demo"
+              style={{ float: "right", width: "60%", margin: "0 0 .5em .5em" }} />
+              <img src={aslImg} alt="Letter A in ASL with MediaPipe Overlay"
+                style={{ float: "left", width: "35%", margin: "0 0 .5em .5em" }} />
+            </p>
+            <p>
+              Implementing and training a CNN and an MLP for recognizing American Sign Language letters in real time.
+              <a href="https://github.com/alexasheldon/cs4701-ai-proj" target="_blank" rel="noopener noreferrer">
+                <i className="fa fa-github fa-2x w3-hover-opacity" style={{ marginLeft: '6px' }}></i>
+              </a>
+            </p>
             <div className="tag w3-light-grey w3-small">Python</div>
             <div className="tag w3-light-grey w3-small">CNNs</div>
             <div className="tag w3-light-grey w3-small">Computer Vision</div>
+            <div className="tag w3-light-grey w3-small">MLP</div>
+            <div className="tag w3-light-grey w3-small">MediaPipe</div>
             <div className="tag w3-light-grey w3-small">Data Cleaning</div>
           </div>
         </div>
         <div className="w3-third w3-container w3-margin-bottom">
           <div className="w3-container w3-white">
             <h4><b>Blackjack RL Agent</b></h4>
-            <p>Implementing a reinforcement learning agent optimized for playing blackjack.</p>
+            <p>Implementing a reinforcement learning agent optimized for playing blackjack.
+              <a href="https://github.com/alexasheldon/blackjack-rl" target="_blank" rel="noopener noreferrer">
+                <i className="fa fa-github fa-2x w3-hover-opacity" style={{ marginLeft: '6px' }}></i>
+              </a>
+            </p>
+            <p>
+              <img src={blackjackQ} alt="Presentation Slide on Q-Learning Through Blackjack"
+                style={{ width: "65%", margin: "0 0 .5em .5em" }} />
+            </p>
             <div className="tag w3-light-grey w3-small">Python</div>
             <div className="tag w3-light-grey w3-small">Reinforcement Learning</div>
-            <div className="tag w3-light-grey w3-small">DQN</div>
+            <div className="tag w3-light-grey w3-small">Q-Learning</div>
             <div className="tag w3-light-grey w3-small">AI Communication</div>
           </div>
         </div>
@@ -169,6 +189,7 @@ const Projects: React.FC<ProjectsProps> = () => {
             <div className="tag w3-light-grey w3-small">React.js / Node.js</div>
             <div className="tag w3-light-grey w3-small">Typescript</div>
             <div className="tag w3-light-grey w3-small">HTML</div>
+            <div className="tag w3-light-grey w3-small">Multi-Modality</div>
           </div>
         </div>
       </div>
